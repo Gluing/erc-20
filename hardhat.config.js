@@ -208,13 +208,13 @@ module.exports = {
     custom: {
       url: process.env.NETWORK_URL || "http://localhost:8545",
       accounts: {
-        mnemonic: process.env.MNEMONIC || "test test test test test test test test test test test junk",
+        mnemonic: process.env.MNEMONIC || "test test test test test test test test test test test toto",
       }
     }
   },
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    apiKey: "YOUR_ETHERSCAN_API_KEY"
+    apiKey: "CHANGEME"
   }
 };

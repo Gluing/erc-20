@@ -20,7 +20,7 @@ Use `npx hardhat test` to run our unit testing suite.
 ### Deploying to a local network
 Open a terminal and run `npx hardhat node` there, keep it running.
 
-You can now deploy the token by using a command of the type `npx hardhat deploy --vault 0x2546bcd3c84621e976d8185a91a922ae77ecec30 --supply 2500000000000000000000000000`. You can change the `--vault` argument to whatever address you'd like to receive the total supply of coins.
+You can now deploy the token by using a command of the type `npx hardhat deploy --vault 0x08ee0b5858Ff0AfBE729eB4ba127A2Ee04a25eDA --supply 777000000000000000000000000`. You can change the `--vault` argument to whatever address you'd like to receive the total supply of coins.
 
 > Because we use the deployment task with a local hardhat network it already knows which private keys to use to sign the transactions. However, when deploying on a production network you may have to fine tune the configuration.
 
@@ -31,7 +31,7 @@ Please define two environment variables as follows:
 
 You can then run:
 ```
-npx hardhat --network custom deploy --vault <address that should receive the initial coins> --supply 2500000000000000000000000000
+npx hardhat --network custom deploy --vault <address that should receive the initial coins> --supply 777000000000000000000000000
 ```
 
 #### Verifying on Etherscan

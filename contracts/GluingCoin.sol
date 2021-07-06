@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: GPL-3.0-only
 pragma solidity 0.7.6;
 
 import "@openzeppelin/contracts/cryptography/ECDSA.sol";
@@ -35,10 +35,10 @@ contract GluingCoin is ERC20Capped, Ownable {
 
     constructor(address vault, uint256 supply)
         ERC20("Gluing Coin", "GLUING")
-        ERC20Capped(1000000000 * (10**18))
+        ERC20Capped(777000000 * (10**18))
         Ownable()
     {
-        // We create 2.5B coins but the token has 18 decimals.
+        // We create 777M coins but the token has 18 decimals.
         _mint(vault, supply);
     }
 
